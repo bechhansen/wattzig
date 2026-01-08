@@ -1,0 +1,45 @@
+7E A1CB 2B 21 13 57E7 E6E700
+0F00000000
+0C07E9021902141114FF800000
+0241
+0A0E 4B616D73747275705F5630303031                       Kamstrup_V0001
+0906 0101010800FF 06003037E7                            Active Energy Import (A+) - Total           3,160,039 (decimal)     OK
+0906 0101020800FF 0600000000                            Active Energy Export (-A) - Total           Fra hus til nettet      Pending test
+0906 0101030800FF 0600006775                            Reactive Energy Import (+R) - Total         26,485 (decimal)
+0906 0101040800FF 06001461DD                            Reactive Energy Export (-R) - Total         1,335,773 (decimal)
+0906 0101000001FF 0601CABC5C                            Meter Serial Number / Identification        30063708 (decimal)
+0906 0101010700FF 0600000164                            Active Power Import (A+) - Total W          356
+0906 0101020700FF 0600000000                            Active Power Export (-A) - Total W          0
+0906 0101030700FF 0600000000                            Reactive Power Import (+Q) - Total var      0
+0906 0101040700FF 0600000104                            Reactive Power Export (-Q) - Total var      260
+0906 0001010000FF 090C 07E9021902141114FF800000         Timestamp                                                           Pending implementation
+0906 0101200700FF 1200E0                                Phase 1 Voltage - Instantaneous             224                     OK
+0906 0101340700FF 1200E0                                Phase 2 Voltage - Instantaneous             224                     OK
+0906 0101480700FF 1200E6                                Phase 3 Voltage - Instantaneous             230                     OK
+0906 01011F0700FF 0600000066                            Phase 1 Current - Instantaneous mA          120                     OK
+0906 0101330700FF 0600000032                            Phase 2 Current - Instantaneous mA          50                      OK
+0906 0101470700FF 0600000044                            Phase 3 Current - Instantaneous mA          68                      OK
+0906 0101150700FF 06000000AF                            Phase 1 Active Power - Instantaneous W      175                     OK
+0906 0101290700FF 060000003C                            Phase 2 Active Power - Instantaneous W                              OK
+0906 01013D0700FF 0600000079                            Phase 3 Active Power - Instantaneous W                              OK
+0906 0101210700FF 12005A                                Phase 1 Power Factor - Instantaneous                                OK 
+0906 0101350700FF 120039                                Phase 2 Power Factor - Instantaneous                                OK
+0906 0101490700FF 12004F                                Phase 3 Power Factor - Instantaneous                                OK
+0906 01010D0700FF 120064                                Total Power Factor - Instantaneous
+0906 0101160700FF 0600000000                            Phase 1 Reactive Power - Instantaneous                              OK
+0906 01012A0700FF 0600000000                            Phase 2 Reactive Power - Instantaneous                              OK
+0906 01013E0700FF 0600000000                            Phase 3 Reactive Power - Instantaneous                              OK
+0906 0101160800FF 0600000000                            Phase 1 Reactive Energy - Cumulative
+0906 01012A0800FF 0600000000                            Phase 2 Reactive Energy - Cumulative
+0906 01013E0800FF 0600000000                            Phase 3 Reactive Energy - Cumulative
+0906 0101150800FF 06001565DE                            Phase 1 Active Energy - Cumulative wH       1,402,334 (decimal)
+0906 0101290800FF 06000BA6E0                            Phase 2 Active Energy - Cumulative wH         763,616 (decimal)
+0906 01013D0800FF 06000F2B28                            Phase 3 Active Energy - Cumulative wH         994,088  
+231B 7E
+
+
+
+7EA1CB2B211357E7E6E7000F000000000C07E902190216021EFF80000002410A0E4B616D73747275705F563030303109060101010800FF060030388809060101020800FF060000000009060101030800FF060000677509060101040800FF060014620A09060101000001FF0601CABC5C09060101010700FF060000085109060101020700FF060000000009060101030700FF060000000009060101040700FF060000013909060001010000FF090C07E902190216021EFF80000009060101200700FF1200DF09060101340700FF1200E409060101480700FF1200E5090601011F0700FF06000003A509060101330700FF060000002709060101470700FF060000003C09060101150700FF060000082309060101290700FF060000000B090601013D0700FF060000002309060101210700FF12006309060101350700FF12000C09060101490700FF12001A090601010D0700FF12006409060101160700FF0600000000090601012A0700FF0600000000090601013E0700FF060000000009060101160800FF0600000000090601012A0800FF0600000000090601013E0800FF060000000009060101150800FF060015665A09060101290800FF06000BA6E5090601013D0800FF06000F2B48B5C67E
+
+
+09060101340700FF1200E0  

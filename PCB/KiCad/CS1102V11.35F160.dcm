@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP CS1102V11.35F160
+D SWITCH TACTILE SPST-NO 0.05A 50V
+K
+F https://www.citrelay.com/pdf/CS1102V
+$ENDCMP
+#
+#End Doc Library
