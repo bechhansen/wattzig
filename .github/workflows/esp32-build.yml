@@ -32,7 +32,7 @@ jobs:
     - name: Generate version
       id: version
       run: |
-        VERSION=$(git describe --tags --always --dirty)
+        VERSION=$(git describe --tags --always --dirty --exclude='*-alpha*' --exclude='*-beta*' --exclude='*-rc*' --exclude='*-pre*' --exclude='*-preview*')
         echo "VERSION=$VERSION" >> $GITHUB_OUTPUT
         echo "BUILD_NUMBER=${{ github.run_number }}" >> $GITHUB_OUTPUT
         echo "Building version: $VERSION"
