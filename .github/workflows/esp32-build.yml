@@ -32,7 +32,11 @@ jobs:
     - name: Generate version
       id: version
       run: |
-        VERSION=$(git describe --tags --always --dirty --exclude='*-alpha*' --exclude='*-beta*' --exclude='*-rc*' --exclude='*-pre*' --exclude='*-preview*')
+        if [[ "$GITHUB_REF" == refs/tags/* ]]; then
+          VERSION="${GITHUB_REF_NAME}"
+        else
+          VERSION=$(git describe --tags --always --dirty --exclude='*-alpha*' --exclude='*-beta*' --exclude='*-rc*' --exclude='*-pre*' --exclude='*-preview*')
+        fi
         echo "VERSION=$VERSION" >> $GITHUB_OUTPUT
         echo "BUILD_NUMBER=${{ github.run_number }}" >> $GITHUB_OUTPUT
         echo "Building version: $VERSION"
