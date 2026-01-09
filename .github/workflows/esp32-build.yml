@@ -43,8 +43,7 @@ jobs:
         esp_idf_version: v5.5.2
         target: esp32c6
         path: 'Software'
-      env:
-        SDKCONFIG_DEFAULTS: Software/sdkconfig.defaults.release
+        command: 'idf.py -DSDKCONFIG_DEFAULTS="sdkconfig.defaults.release" build'
 
     - name: Fix build permissions
       run: |
