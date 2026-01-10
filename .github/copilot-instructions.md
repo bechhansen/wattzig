@@ -1,7 +1,7 @@
-# PowerMeter Copilot Instructions
+# WattZig Copilot Instructions
 
 ## Project Overview
-PowerMeter is an ESP32C6-based Zigbee End Device that reads 3-phase power meter data via DLMS protocol over UART and reports electrical measurements through Zigbee Home Automation (ZHA) standard clusters. The firmware is built on ESP-IDF v5.5.2 with FreeRTOS task management.
+WattZig is an ESP32C6-based Zigbee End Device that reads 3-phase power meter data via DLMS protocol over UART and reports electrical measurements through Zigbee Home Automation (ZHA) standard clusters. The firmware is built on ESP-IDF v5.5.2 with FreeRTOS task management.
 
 ## Architecture & Data Flow
 
@@ -31,7 +31,7 @@ PowerMeter is an ESP32C6-based Zigbee End Device that reads 3-phase power meter 
 
 ### Build Command
 ```bash
-cd PowerMeter
+cd wattzig
 idf.py build -p /dev/ttyUSB0 -b 115200  # Configure via menuconfig first
 idf.py flash monitor
 ```
@@ -46,7 +46,7 @@ idf.py flash monitor
 - **Exit Monitor**: `Ctrl+T` then `X`
 
 ### CI/CD
-GitHub Actions workflow ([.github/workflows/esp32-build.yml](../../.github/workflows/esp32-build.yml)) triggers on changes to `PowerMeter/` subfolder. Build artifacts are versioned using git tags.
+GitHub Actions workflow ([.github/workflows/esp32-build.yml](../../.github/workflows/esp32-build.yml)) triggers on changes to `wattzig/` subfolder. Build artifacts are versioned using git tags.
 
 ## Conventions & Patterns
 
@@ -93,7 +93,7 @@ GitHub Actions workflow ([.github/workflows/esp32-build.yml](../../.github/workf
 ## Extension Points
 
 ### Adding New Meters
-- Implement meter driver in `PowerMeter/common/` following `temp_sensor_driver` pattern
+- Implement meter driver in `wattzig/common/` following `temp_sensor_driver` pattern
 - Register callback to `uart_event_task` for meter-specific framing
 - Map meter fields to ZCL attributes in `handle_dlms_field()`
 
@@ -103,7 +103,7 @@ GitHub Actions workflow ([.github/workflows/esp32-build.yml](../../.github/workf
 - Update callback to populate attribute via `esp_zb_zcl_set_attribute_val()`
 
 ### Testing
-- Test data defined in [PowerMeter/main/kamstrup_test_data.h](../../PowerMeter/main/kamstrup_test_data.h)
+- Test data defined in [wattzig/main/kamstrup_test_data.h](../../wattzig/main/kamstrup_test_data.h)
 - Simulator callback available: `dlms_data_timer_callback()` (disabled by default)
 - Button press triggers restart for quick firmware reload
 

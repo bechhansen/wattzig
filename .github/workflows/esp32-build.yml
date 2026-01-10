@@ -57,7 +57,7 @@ jobs:
       run: |
         cd Software/build
         # Create normalized filenames for release bundle (no embedded version in filenames)
-        cp PowerMeter.bin firmware.bin
+        cp WattZig.bin firmware.bin
         cp bootloader/bootloader.bin bootloader.bin
         cp partition_table/partition-table.bin partition-table.bin
         # List files to verify
@@ -89,7 +89,7 @@ jobs:
     - name: Create release zip
       run: |
         cd release_assets
-        ZIP_NAME=powermeter-${{ needs.build.outputs.version }}.zip
+        ZIP_NAME=wattzig-${{ needs.build.outputs.version }}.zip
         zip "$ZIP_NAME" firmware.bin bootloader.bin partition-table.bin
         ls -lh "$ZIP_NAME"
 
@@ -112,4 +112,4 @@ jobs:
         body: "Automated release for ${{ github.ref_name }}."
         draft: false
         prerelease: ${{ steps.relmeta.outputs.prerelease }}
-        artifacts: release_assets/powermeter-${{ needs.build.outputs.version }}.zip
+        artifacts: release_assets/wattzig-${{ needs.build.outputs.version }}.zip

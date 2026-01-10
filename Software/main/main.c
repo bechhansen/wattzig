@@ -45,7 +45,7 @@
 #include "kamstrup_test_data.h"
 #endif
 
-static const char *TAG = "PowerMeter";
+static const char *TAG = "WattZig";
 
 static QueueHandle_t uart_queue;
 static dlms_parser_t parser;
@@ -730,7 +730,7 @@ void app_main(void)
     const esp_app_desc_t *app_desc = esp_app_get_description();
     
     ESP_LOGI(TAG, "========================================");
-    ESP_LOGI(TAG, "PowerMeter Application Started");
+    ESP_LOGI(TAG, "WattZig Started");
     ESP_LOGI(TAG, "Version: %s", app_desc->version);
     ESP_LOGI(TAG, "Build Date: %s", app_desc->date);
     ESP_LOGI(TAG, "Build Time: %s", app_desc->time);

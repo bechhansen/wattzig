@@ -1,7 +1,7 @@
-# PowerMeter Hardware - Bill of Materials (BOM)
+# WattZig Hardware - Bill of Materials (BOM)
 
 ## Summary
-Complete electronic component list for PowerMeter ESP32C6-based Zigbee power meter reader.
+Complete electronic component list for WattZig ESP32C6-based Zigbee power meter reader.
 
 ## Microcontroller & Core
 
@@ -54,9 +54,9 @@ Complete electronic component list for PowerMeter ESP32C6-based Zigbee power met
 
 | Qty | Part | Description | Notes |
 |-----|------|-------------|-------|
-| 1 | **PCB** | Custom designed (KiCad project) | See `PCB/PowerMeter.kicad_pcb` |
+| 1 | **PCB** | Custom designed (KiCad project) | See `PCB/WattZig.kicad_pcb` |
 | 4 | **Standoff** | M3 nylon or brass | PCB mounting |
-| 1 | **Enclosure** | 3D printed case | See `3DPrint/PowerMeter v9.3mf` |
+| 1 | **Enclosure** | 3D printed case | See `3DPrint/WattZig v9.3mf` |
 
 ## Assembly Notes
 
@@ -142,4 +142,4 @@ GPIO4 ---|[10kΩ pull-up]---VCC
 4. **Critical check**: Verify bulk capacitor is parallel to regulator
 5. Power test: Apply 5V, check 3.3V output with multimeter
 6. Program ESP32-C6 via SPI/JTAG or UART bootloader
-7. Assemble into 3D-printed enclosure (`3DPrint/PowerMeter v9.3mf`)
+7. Assemble into 3D-printed enclosure (`3DPrint/WattZig v9.3mf`)

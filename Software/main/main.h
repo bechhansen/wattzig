@@ -8,10 +8,10 @@
 #define ED_AGING_TIMEOUT ESP_ZB_ED_AGING_TIMEOUT_64MIN
 #define ED_KEEP_ALIVE 3000 /* 3000 millisecond */
 
-#define MANUFACTURER_NAME "\x04" \
-                          "Monz"
-#define MODEL_IDENTIFIER "\x0A" \
-                         "PowerMeter"
+#define MANUFACTURER_NAME "\x10" \
+                          "Peer Bech Hansen"
+#define MODEL_IDENTIFIER "\x07" \
+                         "WattZig"
 
 // UART configuration
 #define UART_NUM UART_NUM_1 // Use UART1

@@ -42,4 +42,4 @@ endif()
 
 message(STATUS "Build version: ${PROJECT_VER} (tag: ${GIT_TAG}, branch: ${GIT_BRANCH}, commit: ${GIT_COMMIT})")
 
-project(PowerMeter)
+project(WattZig)

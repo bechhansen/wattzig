@@ -1,16 +1,16 @@
-# PowerMeter
+# WattZig - The Open Zigbee Power Meter
 
 A Zigbee-based smart power meter reader for ESP32C6 that reads 3-phase electrical data via DLMS protocol and reports measurements to Zigbee hubs (Home Assistant, etc.).
 
-![PowerMeter Hardware](Docs/Print.png)
+![WattZig Hardware](Docs/Print.png)
 
 ## Overview
 
-PowerMeter reads meter data via DLMS protocol over UART and reports 3-phase electrical measurements (voltage, current, active/reactive power, power factor, energy counters) through ZHA-compliant Zigbee clusters.
+WattZig reads meter data via DLMS protocol over UART and reports 3-phase electrical measurements (voltage, current, active/reactive power, power factor, energy counters) through ZHA-compliant Zigbee clusters.
 
 ![Zigbee Home Automation Interface](Docs/HA-Zigbee.png)
 
-*PowerMeter device reporting real-time electrical measurements to Home Assistant via Zigbee. All three phases show voltage (~228-230V), current (0.0-0.7A), power (9.0-130W), and power factor (11%-86%). The device also reports total energy consumption (34,351.77 kWh delivered) and can be integrated into automations and dashboards.*
+*The WattZig device reporting real-time electrical measurements to Home Assistant via Zigbee. All three phases show voltage (~228-230V), current (0.0-0.7A), power (9.0-130W), and power factor (11%-86%). The device also reports total energy consumption (34,351.77 kWh delivered) and can be integrated into automations and dashboards.*
 
 ## Features
 
@@ -46,7 +46,7 @@ See [HARDWARE.md](HARDWARE.md) for complete Bill of Materials, schematics, and a
 1. **Clone and configure:**
    ```bash
    git clone <repo-url>
-   cd PowerMeter/Software
+   cd wattzig/Software
    idf.py menuconfig
    ```
 
