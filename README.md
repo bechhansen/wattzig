@@ -1,5 +1,13 @@
 # WattZig - The Open Zigbee Power Meter
 
+[![ESP32 Build](https://img.shields.io/github/actions/workflow/status/bechhansen/wattzig/esp32-build.yml?branch=main&label=build)](https://github.com/bechhansen/wattzig/actions/workflows/esp32-build.yml)
+[![Latest Release](https://img.shields.io/github/v/release/bechhansen/wattzig?include_prereleases&sort=semver)](https://github.com/bechhansen/wattzig/releases/latest)
+[![License](https://img.shields.io/github/license/bechhansen/wattzig)](LICENSE)
+[![ESP-IDF](https://img.shields.io/badge/ESP--IDF-v5.5.2-blue)](https://github.com/espressif/esp-idf)
+[![ESP32-C6](https://img.shields.io/badge/platform-ESP32--C6-green)](https://www.espressif.com/en/products/socs/esp32-c6)
+[![Zigbee](https://img.shields.io/badge/Zigbee-ZHA-orange)](https://www.home-assistant.io/integrations/zha/)
+[![Home Assistant](https://img.shields.io/badge/Home%20Assistant-compatible-41BDF5?logo=home-assistant)](https://www.home-assistant.io/)
+
 A Zigbee-based smart power meter reader for ESP32C6 that reads 3-phase electrical data via DLMS protocol and reports measurements to Zigbee hubs (Home Assistant, etc.).
 
 ![WattZig Hardware](Docs/Print.png)
